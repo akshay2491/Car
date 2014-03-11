@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>My AngularJS App</title>
+  <link rel="stylesheet" href="css/app.css"/>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+
+</head>
+<body>
+   
+
+
+ 
+	  
+	  <div class="top">
+	  	<div class="container">
+	  		<ul class="loginbar pull-right">
+	  			<li>
+	  				<i class="glyphicon glyphicon-cloud">
+	  				</i>
+	  				<a>LANGUAGES</a>
+	  				<!-- <ul class="lang">
+	  					<li class="active">
+	  						<a href="#" >ENGLISH
+	  						<i class="glyphicon glyphicon-cloud">
+	  						</i></a>
+	  					</li>
+	  					<li>
+	  						<a href="#">Spanish</a>
+
+	  					</li>
+	  				 --></li>
+	  				<li class="divider"></li>
+	  				<li>
+	  				
+	  				<a>SERVICES</a>
+	  			</li>
+	  			<li class="divider"></li>
+	  			<li>
+	  				
+	  				<a>LOGIN</a>
+	  			</li>
+	  		</ul>
+	  	</div>
+
+	  </div>
+      <div class="container">
+	<div class="row">
+		<div class="col-md-9">
+                        
+                   <span> <h1>CAR DESIGNING</h1></span>
+		
+
+		</div>
+</div>
+	</div>
+	  <div class="header">
+	  	<div class="navbar navbar-inverse" role="navigation">
+	  		<div class="container">
+                
+	  			<div class="navbar-header"></div>
+	  			<div class="collapse navbar-collapse navbar-responsive-collapse">
+
+	  				<div class="nav navbar-nav navbar-right">
+                                             <li><a href="#/anim">Home</a></li>
+	  					 <li class="active"><a href="#/DesignPhase">ADD CAR</a></li>
+                    <li><a href="#/view3">VIEW CARS</a></li>
+                    <li><a href="#">GALLERIES</a></li>
+                    
+                   
+	  				</div>
+	  			</div>
+	  		</div>
+                    
+	  	</div>
+          </div>
+    <div class="row">
+        <div class="col-md-3">
+  
+            <div class="mainC">
+               
+    <div class="sidebar-nav" ng-controller="navCtrl">
+        
+              <div class="expandcollapse-item">
+        <div ng-click="active = !active" ng-class="{'expandcollapse-heading-collapsed': active, 'expandcollapse-heading-expanded': !active}">
+          <p>Dashboard</p>
+        </div>
+                  
+        <div class="slideDown" ng-hide="active">
+          <div class="expand-collapse-content">
+              <div class="cont" style="">
+                  <a href="#view1/">Add Car</a>
+              </div>
+              <div class="cont" style="">
+                  <a href="#view3/">View Cars</a>
+              </div>
+               <div class="cont" style="">
+                  <a href="#view3/">Cars</a>
+              </div>
+          </div>
+        </div>
+                  <div  ng-class="{'expandcollapse-heading-collapsed': active, 'expandcollapse-heading-expanded': !active}">
+          <a href="#view3/">View All Cars</a>
+        </div>
+      </div>
+
+        </div>
+            </div>
+    </div>
+
+<div class="col-md-9">
+     
+    <div class="container">
+       
+<div ng-view=''> </div>
+
+        
+</div>
+</div>
+    </div>
+<div class="navbar-fixed-bottom">
+		
+	</div>
+
+   
+    
+    
+   
+  
+    
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-animate.min.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+
+
+  <script src="js/directives.js"></script>
+</body>
+</html>

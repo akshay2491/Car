@@ -1,0 +1,54 @@
+<script>
+  $(document).ready(function(){
+  $("#next").click(function(){
+      
+ $('.addcar').hide(1000);
+ $('.addcar1').css('visibility','visible');
+ $('.addcar1').show(1000);
+  });
+  $("#prev").click(function(){
+      
+ $('.addcar1').hide(1000);
+  $('.addcar1').css('visibility','hidden');
+ $('.addcar').show(1000);
+  });
+});
+    
+  
+</script>
+<div id="head" class="navbar navbar-inverse1">New Car Design</div>
+<div  class="navbar ">
+    <div class="breadcrumb">
+        <a href="#">DashBoard</a>&nbsp<div class="glyphicon glyphicon-arrow-right"></div>
+        <a href="#/view1">Add Car</a>&nbsp<div class="glyphicon glyphicon-arrow-right"></div>
+         Design Phase  </div>
+</div>
+
+<div class="row">
+        <div class="col-md-4">
+    
+           <div class="addcar1">
+      <br><div class="form-group"><label>Name :</label><input type="text"   ng-model="newCar.name" ></div> 
+        
+   
+         <br><div class="form-group" ><label>Color :</label> <input type="color" ng-model="newCar.color" ></div>
+         <br><div class="form-group" ><label>Type  :</label><select name="cars" >
+<option ng-model="car.type" value="volvo">Volvo</option>
+<option ng-model="car.type" value="saab">Saab</option>
+<option ng-model="car.type" value="fiat">Fiat</option>
+<option ng-model="car.type" value="audi">Audi</option>
+</select></div>
+      
+         <br> <div class="form-group" ><label>Description : </label><textarea ng-
+model="newCar.des"></textarea>  </div>
+ <input type="hidden" ng-model="newCar.id">
+
+
+	
+<br> <button class="btn btn-danger" ng-click="addcar()" >Submit</button>
+ <button id="next" class="btn btn-info" ng-click="next('construct phase')">Go To Design Phase</button>
+
+
+ </div>     
+    </div>
+        </div>

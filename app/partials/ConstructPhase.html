@@ -1,0 +1,37 @@
+
+<div class="container">
+<div id="head" class="navbar navbar-inverse1">&nbsp&nbsp&nbsp&nbspNew Car Design</div>
+<div class="row">
+    <div class="col-md-3">
+        
+            <ul class="navigation">
+                <li><a href="#/DesignPhase"><i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Design Phase</a></li><br>
+                <li> &nbsp; <i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Construct Phase</li>
+            </ul>
+        
+    </div>
+        <div class="col-md-3">
+    <div class="addCarConstructPhase">
+         
+
+        <form name="ConstructForm" ng-submit="addCarConstructPhase()">
+
+      
+        
+   
+         <br><div class="form-group" ><label>Color :</label> <input  type="color" id=color ng-model="newCar.color" ></div>
+         
+   
+         <br> <div class="form-group" ><label>No .of Seats : </label><input type="text" id=seats ng-model="newCar.seats" >  </div>
+ <button type="submit" class="btn btn-danger">Submit</button>
+ <br><br>
+ <a href="#/DesignPhase"><button id="prev1" class="btn btn-info" ng-click="prev('Design phase')">&ltDesign Phase</button></a>
+<a href="#/MainPhase"><button id="next1" class="btn btn-info" ng-click="next('Main phase')">Project Details&gt</button></a>
+  
+    </form>
+        </div> 
+       
+</div>
+   
+</div>
+</div>

@@ -1,0 +1,37 @@
+ 
+<div class="container">
+<div id="head" class="navbar navbar-inverse1">&nbsp&nbsp&nbsp&nbspNew Car Design</div>
+<div class="row">
+    <div class="col-md-3">
+       
+            <ul class="navigation">
+                <li><a href="#/DesignPhase"><i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Design Phase</a></li><br>
+                <li><a href="#/ConstructPhase">&nbsp;<i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Construct Phase</a></li><br>
+                <li><a href="#/MainPhase">&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Main Phase</a></li><br>
+                 <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Final Phase</li>
+            </ul>
+       
+    </div>
+    <div class="col-md-3">
+<div class="addCarFinalPhase">
+         
+
+        <form  ng-submit="addCarFinalPhase()">
+
+      
+        
+   
+         <br><div class="form-group" ><label>Car Sketch Image:</label> <input type="file" ng-model="newCar.Simg" ></div>
+          <input type="hidden" ng-model="newCar.id">
+      
+         <br><br>       
+ <button type="submit" class="btn btn-danger">Submit</button>
+ <br><br>
+ <a href="#/MainPhase"><button id="prev3" class="btn btn-info" ng-click="prev('Main phase')">&ltProject Details</button></a>
+ <button id="next3" class="btn btn-info" ng-click="next()">Finish&gt</button>
+  
+    </form>
+        </div> 
+</div>
+</div>
+</div>

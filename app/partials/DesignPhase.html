@@ -1,0 +1,66 @@
+
+<div class="container">
+<div id="head" class="navbar navbar-inverse1">&nbsp&nbsp&nbsp&nbspNew Car Design</div>
+
+
+<div class="row">
+    <div class="col-md-3">
+        
+            <ul class="navigation">
+                <li><i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Design Phase</a></li>
+            </ul>
+        
+    </div>
+        <div class="col-md-3">
+          
+    <div class="addcarDesignPhase">
+        <form  name="DesignForm" ng-submit="addCarDesignPhase()" >
+
+            <br><div class="form-group"><label>Name :</label><input type="text" name="name"    ng-model="newCar.name" >
+            
+            </div> 
+        
+            <br>
+                    <div class="form-group"><label>Fuel type :</label>
+                        <select id="fuelType" ng-model="newCar.ftype" >
+                            <option value="">Please Select</option>
+                            <option value="Diseal">Diesel</option>
+                            <option value="Petrol">Petrol</option>
+                
+                        </select><br></div>
+         <br><div class="form-group" ><label>Type  :</label>
+            
+<input type="radio" id="type" ng-model="newCar.type" value="volvo">Volvo
+<input type="radio" id="type" ng-model="newCar.type" value="sports">Sports
+<input type="radio" id="type" ng-model="newCar.type" value="SUV">SUV
+<input type="radio" id="type" ng-model="newCar.type" value="Family">Family
+</select></div>
+      
+        
+ <input type="hidden" ng-model="newCar.id">
+
+
+	
+ <br> <button type="submit" class="btn btn-danger">Submit</button>
+ <a href="#/ConstructPhase"><button  id="next" class="btn btn-info"  ng-click="next('construct phase')">Construct Phase&gt</button> </a>
+       </form><br>
+        
+
+
+ </div>
+        </div>
+</div>
+        
+
+
+        
+                
+                        
+
+ 
+
+        
+
+
+
+       </div> 

@@ -1,0 +1,52 @@
+
+<script>
+    $(document).ready(function($) {
+      $(".clickableRow").click(function() {
+          alert("sd")
+      });
+});
+</script>
+
+<div id="head" class="navbar navbar-inverse1">&nbsp;Cars </div>
+
+<div  class="navbar ">
+    <div class="breadcrumb">
+        <a href="#">DashBoard</a>&nbsp<div class="glyphicon glyphicon-arrow-right"></div>
+       View Cars
+    </div>
+</div>
+
+<div class="container">
+   
+    
+    
+    &nbsp; <a href="#/view1"><input type="button" class="btn  btn-warning" value="+ New Car"></a>
+    <div class="searchFeat">
+        Search <input type="text" ng-model="name">
+    </div>
+  <div class="table1">
+        <table class="table">  
+        <thead>  
+          <tr>  
+            <th>Project Id</th>  
+            <th>Name</th>  
+            <th>Project Name</th>  
+            <th>Project Manager</th>  
+          </tr>  
+        </thead>  
+        <tbody>  
+            <tr  ng-repeat="imp in cars |filter:name">  
+        <td>{{imp.id}}</td>  
+            <td>{{imp.name}} </td>  
+            <td>{{imp.Pname}}</td>  
+            <td>{{imp.Mname}}</td>
+            <td> <button ng-click="del($index)"><i class="glyphicon glyphicon-remove"></i></button></td>
+            <td><button> <a href="#/Details/{{imp.id}}" ><i class="glyphicon glyphicon-edit"></i></a></button></td>
+        </div>  </tr>  
+         
+        </tbody>  
+      </table>  
+
+</div>
+    
+    </div>
