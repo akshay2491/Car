@@ -511,3 +511,123 @@ animation:*/
         font-family: cursive;
         font-size: 1.3em;
     }
+#container2{
+        height: 150px;
+        width: auto;
+        background: url(../img/1.jpg);
+    }
+    .menu1
+    {
+        height: 150px;
+        width: 150px;
+        
+        float: left;
+        background: rgba(139,62,181,1);
+        transition: all 0.6s ease-in-out 0s;
+    }
+    .p1{
+        font-family: cursive;
+        font-size: 25px;
+          
+        color: rgba(255,255,255,0.7);
+        position: relative;
+        top: 10px;
+     
+        left: 30px;
+        float: left;
+        transition: all 0.6s ease-in-out 0s;
+    }
+    .p2{
+        font-family: fantasy;
+        font-size: 16px;
+          float: left;
+           color: rgba(255,255,255,0.5);
+           position: relative;
+           top:50px;
+       
+        transition: all 0.6s ease-in-out 0s;
+    }
+     .menu2
+    {
+        height: 150px;
+        width: 150px;
+        float: left;
+        background: rgba(0,0,255,1);
+         transition: all 0.6s ease-in-out 0s;
+    }
+     .menu3
+    {
+        height: 150px;
+        width: 150px;
+        float: left;
+        background: rgba(0,128,0,1);
+         transition: all 0.6s ease-in-out 0s;
+    }
+     .menu4
+    {
+        height: 150px;
+        width: 150px;
+        float: left;
+        background: rgba(0,0,0,0.5 );
+         transition: all 0.6s ease-in-out 0s;
+    }
+    .menu1:hover{
+        width: 700px;
+    }
+    .menu1:hover .p1,.menu2:hover .p1,.menu3:hover .p1,.menu4:hover .p1{
+        font-size: 30px;
+    }
+     .menu2:hover{
+        width: 700px;
+    }
+     .menu3:hover{
+        width: 700px;
+    }
+     .menu4:hover{
+        width: 700px;
+    }
+  //breadcrumbs
+  
+  .breadcrumb1 {
+  
+    top:100px;
+    display: inline-block;
+    box-shadow: 0 0 15px 1px black;  
+    border-radius: 20px;
+    overflow: hidden;
+}
+.breadcrumb1 a {
+    text-decoration: none;
+    padding: 0px 10px 0px 30px ;
+    display: block;
+    float:left;
+    position: relative;
+    line-height: 36px;
+    background: green;
+    color:white;
+ 
+}
+.breadcrumb1 a.active,.breadcrumb1 a:hover{
+    background: red;
+}
+.breadcrumb1 a.active:after,.breadcrumb1 a:hover{
+    background: red;
+}
+.breadcrumb1 a:after
+{   content: '';
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    right: -18px;
+    background: green;
+    box-shadow: 2px -2px 1px 1px rgba(0,0,0,0.5),
+        3px -2px 1px 1px rgba(255,255,255,0.6); 
+    -webkit-transform: scale(0.707) rotate(45deg);
+    transform: translate(0.707) rotate(45deg);
+    border-radius: 0 0px 0px 30px;
+    z-index: 1;
+  
+}
+.breadcrumb1 a:last-child:after{
+    content:none;
+}

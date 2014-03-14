@@ -2,10 +2,10 @@ angular.module('myApp.controllers',[ 'ngAnimate']).
         controller('navCtrl',function ($scope){
              $scope.active = true;
 }).
-        controller('FirstCtrl',function ($scope,myService){
-       
+        controller('FirstCtrl',function ($scope,myService,$routeParams,$location){
+       var name=myService.Disp($routeParams.id);
             $scope.nav=[];
-      
+    
     $scope.del=function (index)
     {
               var m=confirm("do you want to delete?")
@@ -21,28 +21,25 @@ $scope.addCarDesignPhase=function()
   {
    
     myService.addCarDesignPhase($scope.newCar);
-       alert($scope.newCar.id)
+   
     
   }
   $scope.addCarConstructPhase=function()
   {
-       
       
-    myService.addCarConstructPhase($scope.newCar);
-  
-   
-    
-  }
+    myService.addCarConstructPhase($scope.newCar,name);
+}
    $scope.addCarMainPhase=function()
-  {
-    myService.addCarMainPhase($scope.newCar);
-    
+  { 
+    myService.addCarMainPhase($scope.newCar,name);
+
     
   }
    $scope.addCarFinalPhase=function()
   {
-    myService.addCarFinalPhase($scope.newCar);
-    
+    myService.addCarFinalPhase($scope.newCar,name);
+     $scope.newCar={};
+      
     
   }
 	

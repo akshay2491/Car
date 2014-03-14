@@ -5,8 +5,13 @@
     <div class="col-md-3">
         
             <ul class="navigation">
-                <li><a href="#/DesignPhase"><i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Design Phase</a></li><br>
-                <li> &nbsp; <i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Construct Phase</li>
+                <div class="breadcrumb1">
+            <a href="#/DesignPhase">First Phase</a>
+            <a href="#" class="active">second Phase</a>
+            <a>Third Phase</a>
+            <a>Last Phase</a>
+        </div> 
+                
             </ul>
         
     </div>
@@ -14,19 +19,19 @@
     <div class="addCarConstructPhase">
          
 
-        <form name="ConstructForm" ng-submit="addCarConstructPhase()">
+        <form name="ConstructForm" ng-submit="addCarConstructPhase($index)">
 
       
         
-   
-         <br><div class="form-group" ><label>Color :</label> <input  type="color" id=color ng-model="newCar.color" ></div>
+            <input type="hidden" ng-model="latestid">
+            <br><div class="form-group" ><label>Color :</label> <input  type="color" id=color ng-model="newCar.color" ></div>
          
    
          <br> <div class="form-group" ><label>No .of Seats : </label><input type="text" id=seats ng-model="newCar.seats" >  </div>
  <button type="submit" class="btn btn-danger">Submit</button>
  <br><br>
  <a href="#/DesignPhase"><button id="prev1" class="btn btn-info" ng-click="prev('Design phase')">&ltDesign Phase</button></a>
-<a href="#/MainPhase"><button id="next1" class="btn btn-info" ng-click="next('Main phase')">Project Details&gt</button></a>
+<a href="#/MainPhase/{{latestid}}"><button id="next1" class="btn btn-info" ng-click="next('Main phase')">Project Details&gt</button></a>
   
     </form>
         </div> 

@@ -4,11 +4,14 @@
 <div class="row">
     <div class="col-md-3">
        
-            <ul class="navigation">
-                <li><a href="#/DesignPhase"><i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Design Phase</a></li><br>
-                <li><a href="#/ConstructPhase">&nbsp;<i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Construct Phase</a></li><br>
-                <li><a href="#/MainPhase">&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Main Phase</a></li><br>
-                 <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Final Phase</li>
+              <ul class="navigation">
+                <div class="breadcrumb1">
+            <a href="#/DesignPhase" >First Phase</a>
+            <a href="#">second Phase</a>
+            <a href="#">Third Phase</a>
+            <a href="#" class="active">Last Phase</a>
+        </div> 
+                
             </ul>
        
     </div>
@@ -22,7 +25,7 @@
         
    
          <br><div class="form-group" ><label>Car Sketch Image:</label> <input type="file" ng-model="newCar.Simg" ></div>
-          <input type="hidden" ng-model="newCar.id">
+         
       
          <br><br>       
  <button type="submit" class="btn btn-danger">Submit</button>

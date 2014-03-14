@@ -4,10 +4,14 @@
 <div class="row">
     <div class="col-md-3">
       
-            <ul class="navigation">
-                <li><a href="#/DesignPhase"><i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Design Phase</a></li><br>
-                <li><a href="#/ConstructPhase">&nbsp;<i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Construct Phase</a></li><br>
-                   <li>&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Main Phase</li>
+           <ul class="navigation">
+                <div class="breadcrumb1">
+            <a href="#/DesignPhase">First Phase</a>
+            <a href="#/ConstructPhase/{{newCar.id}}">second Phase</a>
+            <a href="#"  class="active">Third Phase</a>
+            <a>Last Phase</a>
+        </div> 
+                
             </ul>
         
     </div>
@@ -23,7 +27,7 @@
    
          <br><div class="form-group" ><label>Project Name :</label> <input type="text" id="Pname" ng-model="newCar.Pname" ></div>
          
-       <input type="hidden" ng-model="newCar.id">
+   
          <div class="form-group" ><label>Manager Name : </label><input type="text" id=Mname ng-model="newCar.Mname"> </div><br>
  <button type="submit" class="btn btn-danger">Submit</button>
  <br><br>

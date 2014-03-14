@@ -4,10 +4,17 @@
 
 
 <div class="row">
+     
     <div class="col-md-3">
         
             <ul class="navigation">
-                <li><i class="glyphicon glyphicon-arrow-right"></i>&nbsp;Design Phase</a></li>
+                <div class="breadcrumb1">
+            <a href="#" class="active">First Phase</a>
+            <a href="#">second Phase</a>
+            <a href="#">Third Phase</a>
+            <a href="#">Last Phase</a>
+        </div> 
+                
             </ul>
         
     </div>
@@ -42,7 +49,7 @@
 
 	
  <br> <button type="submit" class="btn btn-danger">Submit</button>
- <a href="#/ConstructPhase"><button  id="next" class="btn btn-info"  ng-click="next('construct phase')">Construct Phase&gt</button> </a>
+ <a href="#/ConstructPhase/{{newCar.id}}"><button  id="next" class="btn btn-info"  ng-click="next('construct phase')">Construct Phase&gt</button> </a>
        </form><br>
         
 

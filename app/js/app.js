@@ -13,7 +13,8 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/anim', {templateUrl: 'partials/anim.html', controller: 'FirstCtrl'});
   $routeProvider.when('/view3', {templateUrl: 'partials/start.html', controller: 'FirstCtrl'});
   $routeProvider.when('/DesignPhase', {templateUrl: 'partials/DesignPhase.html', controller: 'FirstCtrl'});
-  $routeProvider.when('/ConstructPhase', {templateUrl: 'partials/ConstructPhase.html', controller: 'FirstCtrl'});
+    $routeProvider.when('/ConstructPhase', {templateUrl: 'partials/ConstructPhase.html', controller: 'FirstCtrl'});
+  $routeProvider.when('/ConstructPhase/:id', {templateUrl: 'partials/ConstructPhase.html', controller: 'FirstCtrl'});
   $routeProvider.when('/MainPhase', {templateUrl: 'partials/MainPhase.html', controller: 'FirstCtrl'});
   
   $routeProvider.when('/FinalPhase', {templateUrl: 'partials/FinalPhase.html', controller: 'FirstCtrl'});
